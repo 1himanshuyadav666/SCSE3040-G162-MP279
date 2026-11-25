@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/Himanshu Yadav/OneDrive/Desktop/SCSE3040-G162-MP279/mlruns/1/models/m-8a966a384cbe44d693c6a95d21f78fd0/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+    skops_trusted_types: null
+mlflow_version: 3.15.0
+model_id: m-8a966a384cbe44d693c6a95d21f78fd0
+model_size_bytes: 5212226
+model_uuid: m-8a966a384cbe44d693c6a95d21f78fd0
+prompts: null
+run_id: 37f22094a64240bfb1e12d4add0a5b0c
+utc_time_created: '2026-11-24 15:04:17.903114'

@@ -1,0 +1,26 @@
+
+data:
+  train_path: data/raw/train.csv
+  later_path: data/raw/later.csv
+  holdout_path: data/raw/holdout_features.csv
+
+cleaning:
+  sentinel_column: biometric_failures
+  sentinel_value: 9999
+  unit_mixup_column: stock_kg_morning
+  unit_mixup_group: Block South
+  unit_mixup_factor: 1000
+  spelling_column: shop_area
+
+model:
+  random_state: 42
+  test_size: 0.2
+  experiment_name: MP279_Grain_Distribution
+  registered_model_name: MP279_Grain_Model_Final
+  configurations:
+    - n_estimators: 100
+      max_depth: 10
+    - n_estimators: 200
+      max_depth: 15
+    - n_estimators: 300
+      max_depth: null
