@@ -40,6 +40,7 @@ def clean_dataframe(df, params=None):
     affected_group = cleaning["unit_mixup_group"]
     factor = cleaning["unit_mixup_factor"]
 
+    df[unit_column] = df[unit_column].astype(float)
     mask = df["block"] == affected_group
     df.loc[mask, unit_column] = df.loc[mask, unit_column] / factor
 

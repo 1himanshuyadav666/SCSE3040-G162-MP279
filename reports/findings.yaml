@@ -1,0 +1,20 @@
+monitoring:
+  psi:
+    cards_attached: 0.026552
+    working_hours: 0.036983
+    biometric_failures: 0.034765
+    temp_c: 5.767604
+    stock_kg_morning: 0.172312
+    days_to_month_end: 0.037395
+
+  most_drifted_feature: "temp_c"
+
+  mae_by_group:
+    'Block North': 176.3131
+    'Block South': 197.6995
+    'Block East': 249.0682
+
+  worst_served_group: "Block East"
+  mae_v1_on_check: 193.4259
+  mae_v2_on_check: 127.3606
+  decision: "promote"
